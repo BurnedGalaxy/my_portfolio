@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Razim</title>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section id="hero-section">
+        <div id="intro">
+            <h2 style="font-weight: 800; font-size: 2.5rem;" class="yellow">I'M AHMED RAZIM,</h2>
+            <h4 class="white">ELECTRICAL ENGINEERING student at NITS</h4>
+            <div id="links">
+                <a href="#skills" id="call-skill" class="yellow">SKILLS</a>
+                <a href="#contact" id="call-contact" class="yellow">CONTACT</a>
+            </div>
+        </div>
+        <div id="about">
+            <div id="profile-img">
+                <!-- IMAGE TO BE MODIFIED -->
+                <img src="images/profile1.jpg" alt="photo of AHMED RAZIM" >
+            </div>
+            <div id="bio">
+                <h4 style="font-weight: 600; font-size: 2rem;" class="yellow">Hello there,
+			<br>
+		Nice to meet you!</h4>
+                <br>
+                <!-- TO BE MODIFIED -->
+                <p class="white" id="hero-p">
+                    I&apos;m Ahmed Razim, 3rd year Student at National Institute of Technology Silchar, Pursuing Electrical Engineering.
+                    <br>
+                </p>
+                <br>
+                <div id="social-links-con">
+                    <a href="https://www.linkedin.com/in/ahmed-razim-52a2851bb/" target="_blank" class="pointer"><img src="images/linkedin.svg" title="Razim's Linkedin" alt="Linkedin"></a>
+                    <a href="https://github.com/BurnedGalaxy" target="_blank" class="pointer"><img src="images/github.svg" title="Razim's Github" alt="Github"></a>
+                    <a href="https://www.instagram.com/penguin026/?hl=en" target="_blank" class="pointer"><img src="images/instagram.svg" title="Razim's Instagram" alt="instagram"></a>
+                    <a href="mailto:smks26qaz@gmail.com" target="_blank" class="pointer"><img src="images/email.svg" title="Razim's Email" alt="email"></a>
+                </div>
+                <br>
+                <div id="cv-con">
+                    <!-- TO BE MODIFIED (CV LINK) -->
+                    <a href="#" id="cv">View CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- SKILLS PAGE -->
+    <section id="skills" >
+        <div id="skill-main-con" class="reveal">
+            <h2 class="yel">SKILLS AND FIELD OF INTERESTS</h2>
+                <!-- TO BE MODIFIED -->
+            <p class="white" id="skill-intro">Right now, I&apos;m interested in Drone Technology and Deep Learning. Currently, I'm working on a UAV-based project.I would like to work on command line programs in C or Rust.</p>
+            <div id="skill-box-con">
+                <!-- TO BE MODIFIED -->
+                <div class="skill" class="white">
+                    <h4 class="skill-head">DEEP LEARNING</h4>
+                    <p class="skill-body ">I&apos;m doing Deep Learning with Keras and Tensorflow. I'm especially interested in Computer Vision. </p>
+                </div>
+                <!-- TO BE MODIFIED -->
+                <div class="skill" class="white">
+                    <h4 class="skill-head">PROGRAMMING LANGUAGES</h4>
+                    <p class="skill-body">Worked with C on various projects and a bit of Linux programming, Socket Programming; Python; Matlab and Octave; and a bit of Rust. </p>
+                </div>
+                <!-- TO BE MODIFIED -->
+                <div class="skill" class="white">
+                    <h4 class="skill-head">Internet of Things (IoT)</h4>
+                    <p class="skill-body">Completed Industrial Training on IoT from Vyorius and worked on Smart Agriculture and Home Automation System. 
+                </div>
+                <!-- TO BE MODIFIED -->
+                <div class="skill" class="white">
+                    <h4 class="skill-head">OTHER SKILLS</h4>
+                    <p class="skill-body">Microsoft Office, Windows C and I can throw trash cans into the dustbin from a distance accurately ;-) </p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" >
+        <div id="contact-main-con" class="reveal">
+            <h2 class="yel" >GET IN TOUCH</h2>
+            <form id="contact-form"  action="https://formsubmit.co/0b1359f8cb082e0502f02c9c4d57f158" method="POST">
+                <label for="name" class="yellow">Name</label>
+                <input name="Name" type="text" id="name" required>
+                <br>
+                <label for="email" class="yellow">E-mail</label>
+                <input name="Email" type="email" id="email" required>
+                <br>
+                <label for="msg" class="yellow">Message</label>
+                <textarea style="resize: none;" name="Message" id="message-input" id="msg" cols="30" rows="30"></textarea>
+                <br>
+                <input type="submit" id="submit" class="pointer" value="Submit">
+            </form>
+        </div>
+        <footer >
+            <div id="foot" class="inline">
+                <p class="white inner" >	&#169; Razim 2022</p>
+            </div>
+        </footer>
+    
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

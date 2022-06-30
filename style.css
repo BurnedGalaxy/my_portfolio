@@ -1,0 +1,438 @@
+/*GENERAL STYLE FOR PARTICULAR ELEMENTS  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono',sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+    transition: all ease 2s;
+}
+body{
+    background-color: black;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    
+}
+input{
+    width: 60%;
+    padding: 0.5rem;
+}
+#message-input{
+    height: 15vh;
+    padding: 0.5rem;
+    width: 60%;
+
+}
+footer img{
+margin:0.5rem 0 0 0;
+}
+#social-links-con a{
+    cursor: pointer;
+}
+#cv:hover{
+    background-color: rgb(255, 255, 88);
+}
+#submit:hover{
+    background-color: rgb(255, 255, 88);
+}
+#foot img{
+    height: 1rem;
+    width: 1rem;
+}
+#social-links-con img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+#profile-img img{
+    height: auto;
+    width: 80%;
+    border-radius: 1rem;
+}
+#cv{
+    height: 2rem;
+    width: 4rem;
+    padding: 0.5rem;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}
+.yellow,#yel{
+    color: yellow;
+}
+.white{
+    color: rgb(221, 216, 216);
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.skill{
+    width: 70%;
+    padding: 1rem;
+    color: white;
+}
+.skill-head{
+    background-color: #03363D;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+.skill-body{
+    background-color: #444444;
+    padding: 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;    
+}
+.yel{
+    color: yellow;
+    padding: 4rem 0 2rem 0;
+}
+
+
+/* MAJOR STYLES FOR SECTIONS */
+
+#hero-section,#contact,#skills{
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(31, 30, 30);
+    margin-top: 10vh;
+    border-radius: 1rem;
+    padding-bottom: 10vh;
+}
+
+
+/* HERO SECTION STYLES */
+
+#intro{
+    min-height: 30vh;
+    font-size: larger;
+    padding: 4rem;
+
+}
+#links{
+    padding: 4rem 4rem 0 4rem ;
+}
+#call-contact{
+    margin-left: 2rem;
+}
+#about{
+    min-height: 70vh;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+#profile-img{
+    flex: 1;
+    align-self: center;
+    min-width: 300px;
+    
+}
+#bio{
+    flex: 1;
+    align-self: center;
+    min-width: 300px;
+    margin-top: 5vh;
+}
+
+
+
+
+/* SKILLS STYLES */
+
+#skill-main-con{
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
+}
+#skills{
+    overflow: hidden;
+}
+#skill-intro{
+    padding-bottom: 2rem;
+}
+.skill:nth-child(even){
+    margin-left:20%;
+}
+
+
+/* CONTACT PAGE STYLES */
+
+#contact{
+    min-height: 80vh;
+}
+#contact-main-con{
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
+}
+#contact-form{
+    min-height: 50vh;
+    width: 60%;
+    margin: auto;
+    margin-top: 5vh;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+#submit{
+    width: 20%;
+    padding: 0.5rem;
+    background-color: yellow;
+    margin-bottom: 10vh;
+
+}
+footer{
+    background-color: #444444;
+
+}
+footer a{
+    text-decoration: none;
+    color: yellow;
+}
+#foot{
+    min-height: 10vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+.inner{
+padding: 2rem;
+}
+.span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.inline{
+    display: inline-block;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+/* MEDIA QUERIES */
+
+/* FOR BIG DEVICES */
+
+@media only screen and (min-width: 1800px) {
+    #hero-p{
+        margin-bottom: 10vh;
+    }
+}
+
+/* FOR SMALL DEVICES */
+@media only screen and (max-width: 1024px){
+    #about{
+        flex-direction: column;
+    }
+    #intro h4{
+        font-size: 1.5rem;
+    }
+    #intro{
+        padding: 4rem 4rem 0vw 4rem ;
+    }
+    #links a{
+        font-size: 2rem;
+    }
+    #hero-section,#contact,#skills{
+        padding-bottom: 2vh;
+    }
+}
+@media only screen and (max-width: 926px) {
+    #bio{
+        margin-top: 10vh;
+    }
+    #about{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    #about img{
+        margin-left: 10%;
+    }
+    #hero-section,#contact,#skills{
+        width: 80%;
+    }
+    #intro{
+        padding: 4rem 4rem 2vw 4rem ;
+    }
+    #intro h2{
+        font-size: 2rem !important;
+    }
+    #social-links-con img{
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .skill{
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        
+    }
+    .skill:nth-child(even){
+        margin-left:0%;
+    }
+    #hero-section{
+        margin-top: 5vh !important;
+    }
+    #links a{
+        font-size: 1rem;
+    }
+    #contact-form{
+        width: 100%;
+        margin-left:15% ;
+    }
+    
+    
+
+}
+@media only screen and (max-width: 553px) {
+    #foot{
+        flex-direction: column-reverse;
+
+    }
+    .inner{
+        padding: 1rem;
+        }
+        .inner:nth-child(2){
+            padding: 2rem;
+        }
+    #hero-section,#contact,#skills{
+        width: 100%;
+    }
+}
+    @media only screen and (max-width: 527px) {
+    #links{
+        padding: 0;
+        margin-top: 8vh;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap
+    }
+    #intro h4{
+        font-size: 1rem;
+    }
+    .inner{
+        padding: none;
+    }
+    #social-links-con img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.5rem;
+    }
+   
+    #call-contact{
+        margin-left: 0;
+    }
+    #contact-form{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 425px) {
+    #intro{
+        padding: 4rem  2rem 2rem 2rem;
+    }
+    #about{
+        padding: 2rem;
+        width: 100vw;
+        flex-direction: column;
+        font-size: 1rem;
+        
+        
+    }
+    label{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+    #submit{
+        width: auto;
+    }
+    #message-input{
+        min-height: 15vh;
+        width: 90%;
+    }
+    #bio{
+        flex: 1;
+        align-self: center;
+        min-width: 0;
+    }
+    #profile-img img{
+        width: 60vw;
+        margin: auto;
+        margin-left: 10%;
+        
+
+
+    }
+    #contact-form{
+        padding: 0;
+        margin: 0;
+    }
+    input{
+        width: 90%;
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    #profile-img img{
+        width: 40vw;
+
+    }
+    #intro h2{
+        font-size: 1.5rem !important;
+    }
+    #intro h4{
+        font-size: 1rem !important;
+    }
+    #social-links-con a img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.2rem;
+    }
+    #about img{
+        margin-left: 30%;
+    }
+    
+}
+
+/* ANIMATION */
+@keyframes fadeInAnimation {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
